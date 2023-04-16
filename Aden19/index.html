@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aden 19</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#" ><img src="logo-removebg-preview.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Kuso Dhawoow <span>Aden19</span><br>Hoyga Ice-cream-ka </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque molestias blanditiis incidunt, quia, ab porro voluptatem quae ipsa vitae perferendis non!</p>
+                <a href="#">Learn More</a>
+               
+            </div>
+            <div class="imgBox">
+                <img src="image3.png" alt="" class="aden19">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img3-removebg-preview.png" alt="" onclick="imgSlider('image3.png');changeCircle('#D5004F')"></li>
+            <li><img src="img2-removebg-preview.png" alt="" onclick="imgSlider('image2.png');changeCircle('#000000')"></li>
+            <li><img src="img1-removebg-preview.png" alt="" onclick="imgSlider('image1.png');changeCircle('#7f3f57')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></ion-icon></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.aden19').src = anything;
+        }
+        function changeCircle (color) {
+            const circle1 = document.querySelector('circle');
+            circle1.style.background = color;
+        }
+    </script>
+</body>
+</html>
